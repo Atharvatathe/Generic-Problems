@@ -30,4 +30,11 @@ public class GenericExampleTest {
         Float max = generic.findMaximumFloat(7.8f,4.4f,5.2f);
         Assertions.assertEquals(7.8f,max);
     }
+
+    @Test
+    public void givenFloatNumber_SrcondMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        Float max = generic.findMaximumFloat(4.4f,7.8f,5.2f);
+        Assertions.assertEquals(7.8f,max);
+    }
 }
