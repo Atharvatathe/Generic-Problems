@@ -15,4 +15,5 @@ public class GenericExample {
         System.out.println("Maximum Number is: " + m);
     }
 
+
 }

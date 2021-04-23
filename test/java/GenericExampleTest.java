@@ -16,4 +16,12 @@ public class GenericExampleTest {
         Integer max = generic.findMaximumInt(4,5,3);
         Assertions.assertEquals(5,max);
     }
+
+    @Test
+    public void givenNumber_ThirdMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        Integer max = generic.findMaximumInt(4,3,5);
+        Assertions.assertEquals(5,max);
+    }
+
 }
