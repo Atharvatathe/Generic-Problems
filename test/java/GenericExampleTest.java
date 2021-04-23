@@ -27,35 +27,15 @@ public class GenericExampleTest {
     @Test
     public void givenFloatNumber_FirstMaximum_returnMaximumNumber(){
         GenericExample generic = new GenericExample();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Float max = generic.findMaximumFloat(7.8f,4.4f,5.2f);
-=======
         Float max = generic.findMaximumFloat(7.8f,4.4f,6.6f);
->>>>>>> TC2.2_PassingMaxSecond
-=======
-        Float max = generic.findMaximumFloat(7.8f,4.4f,6.6f);
->>>>>>> TC2.3_PassingMaxThird
         Assertions.assertEquals(7.8f,max);
     }
 
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public void givenFloatNumber_SrcondMaximum_returnMaximumNumber(){
-        GenericExample generic = new GenericExample();
-        Float max = generic.findMaximumFloat(4.4f,7.8f,5.2f);
-        Assertions.assertEquals(7.8f,max);
-=======
-=======
->>>>>>> TC2.3_PassingMaxThird
     public void givenFloatNumber_SecondMaximum_returnMaximumNumber() {
         GenericExample generic = new GenericExample();
         Float max = generic.findMaximumFloat(4.4f, 7.8f, 6.6f);
         Assertions.assertEquals(7.8f, max);
-<<<<<<< HEAD
->>>>>>> TC2.2_PassingMaxSecond
-=======
     }
 
     @Test
@@ -63,6 +43,5 @@ public class GenericExampleTest {
         GenericExample generic = new GenericExample();
         Float max = generic.findMaximumFloat(4.4f, 6.6f, 7.8f);
         Assertions.assertEquals(7.8f, max);
->>>>>>> TC2.3_PassingMaxThird
     }
 }

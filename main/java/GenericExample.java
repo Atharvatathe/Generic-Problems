@@ -29,4 +29,24 @@ public class GenericExample {
         System.out.println("Maximum float Number is: " + m);
     }
 
+    public static String findMaximumString(String a, String b, String c) {
+        String max;
+        max = a;
+        if (b.compareTo(max) == 1)
+            max = b;
+        if (c.compareTo(max) == 1)
+            max = c;
+        printStringMaximum(max);
+        return max;
+    }
+
+    public static void printStringMaximum(String m) {
+        System.out.println("Maximum String is: " + m);
+    }
+
+
+    public static void main(String[] args){
+        GenericExample g = new GenericExample();
+        g.findMaximumString("Apple","Peach","Banana");
+    }
 }
