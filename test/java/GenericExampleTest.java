@@ -52,4 +52,15 @@ public class GenericExampleTest {
         Assertions.assertEquals("Banana",max);
     }
 
+<<<<<<< HEAD
+=======
+    @Test
+    public void givenStringNumber_SecondMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        String max = generic.findMaximumString("Apple","Banana","Peach");
+        Assertions.assertEquals("Banana",max);
+    }
+
+
+>>>>>>> TC3.2_PassingMaxSecond
 }
