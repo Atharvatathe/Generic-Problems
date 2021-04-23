@@ -45,8 +45,4 @@ public class GenericExample {
     }
 
 
-    public static void main(String[] args){
-        GenericExample g = new GenericExample();
-        g.findMaximumString("Apple","Peach","Banana");
-    }
 }
