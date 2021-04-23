@@ -44,4 +44,27 @@ public class GenericExampleTest {
         Float max = generic.findMaximumFloat(4.4f, 6.6f, 7.8f);
         Assertions.assertEquals(7.8f, max);
     }
+
+    @Test
+    public void givenStringNumber_FirstMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        String max = generic.findMaximumString("Banana","Apple","Peach");
+        Assertions.assertEquals("Banana",max);
+    }
+
+   @Test
+    public void givenStringNumber_SecondMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        String max = generic.findMaximumString("Apple","Banana","Peach");
+        Assertions.assertEquals("Banana",max);
+    }
+
+    @Test
+    public void givenStringNumber_ThirdMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        String max = generic.findMaximumString("Apple","Peach","Banana");
+        Assertions.assertEquals("Banana",max);
+    }
+
+
 }
