@@ -53,14 +53,29 @@ public class GenericExampleTest {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     @Test
+=======
+   @Test
+>>>>>>> TC3.3_PassingMaxThird
     public void givenStringNumber_SecondMaximum_returnMaximumNumber(){
         GenericExample generic = new GenericExample();
         String max = generic.findMaximumString("Apple","Banana","Peach");
         Assertions.assertEquals("Banana",max);
     }
 
+<<<<<<< HEAD
 
 >>>>>>> TC3.2_PassingMaxSecond
+=======
+    @Test
+    public void givenStringNumber_ThirdMaximum_returnMaximumNumber(){
+        GenericExample generic = new GenericExample();
+        String max = generic.findMaximumString("Apple","Peach","Banana");
+        Assertions.assertEquals("Banana",max);
+    }
+
+
+>>>>>>> TC3.3_PassingMaxThird
 }
