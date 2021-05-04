@@ -1,3 +1,9 @@
+import java.util.Optional;
+import java.util.Comparator;
+
+import static java.util.Arrays.stream;
+
+
 public class GenericExample<E extends Comparable<E>>{
 
     E a,b,c;
@@ -7,24 +13,19 @@ public class GenericExample<E extends Comparable<E>>{
         this.b = b;
         this.c = c;
     }
+    public GenericExample(){}
 
-    public E findMaximum(){
-        return findMaximum(a,b,c);
-    }
-
-    public static <E extends Comparable<E>> E findMaximum(E a,E b,E c) {
-        E max;
-        max = a;
-        if (b.compareTo(max) > 0)
-            max = b;
-        if (c.compareTo(max) > 0)
-            max = c;
+    public Optional<E> findMaximum(E...element) {
+        Optional<E> max;
+        max = stream(element).
+                sorted(Comparator.reverseOrder()).findFirst();
         printMaximum(max);
         return max;
     }
 
-    public static <T> void printMaximum(T m) {
-        System.out.println("The Maximum is: " + m);
+    public void printMaximum(Optional<E> max) {
+        System.out.println("The Maximum is: " + max);
     }
+
 
 }
