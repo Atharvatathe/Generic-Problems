@@ -19,12 +19,14 @@ public class GenericExample<E extends Comparable<E>>{
         Optional<E> max;
         max = stream(element).
                 sorted(Comparator.reverseOrder()).findFirst();
-        printMaximum(max);
+        printMaximum(max,element);
         return max;
     }
 
-    public void printMaximum(Optional<E> max) {
-        System.out.println("The Maximum is: " + max);
+    public void printMaximum(Optional<E> max,E...elements) {
+        for (E element : elements)
+            System.out.print(element+" ");
+        System.out.println("Maximum element:" +max);
     }
 
 
